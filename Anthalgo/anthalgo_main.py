@@ -13,3 +13,4 @@ def main():
     # Import the data from the endpoint
     
     url = "https://anthologiagraeca.org/api/passages/?format=json&page="
+    anthalgo.fetch_data(url)

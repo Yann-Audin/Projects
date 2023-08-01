@@ -1,4 +1,12 @@
-def fetch_data(url):
+def fetch_data(url: str) -> pd.DataFrame:
+    """
+    Loop on the pages and fetch the data from the endpoint.
+
+    Args:
+        url (str): The basic url of the page
+    Returns:
+        df (pd.DataFrame): The data of the pages
+    """
     
     heads = ["id", "book", "fragment", "text_grc", "text_fra", "text_eng", "author", "keywords"]
     
